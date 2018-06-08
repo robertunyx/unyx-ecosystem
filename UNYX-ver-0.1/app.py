@@ -12,7 +12,7 @@ from credentials import MONGODB_URI
 app = Flask(__name__)
 
 app.config['MONGO_DBNAME'] = 'unyx-ecosystem'
-app.config['MONGO_URI'] = 'MONGODB_URI'
+app.config['MONGO_URI'] = 'mongodb://<user>:<pw>@ds147390.mlab.com:47390/unyx-ecosystem'
 
 # INSTANTIATE DATABASE CONNECTION
 mongo = PyMongo(app)
