@@ -1,0 +1,120 @@
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+	min-height: 100%;
+}
+
+html {
+	display: block;
+	font-family: "Lucida Grande", sans-serif
+}
+
+body {
+	background-color: #f5f5f5;
+	color: #333;
+	height: auto;
+}
+
+div {
+	display: block;
+}
+
+h1 {
+	font-size: 30px;
+}
+
+@font-face {
+  font-family: 'Lucida Grande';
+  src: {{ url_for('static', filename='css/LucidaGrande.ttf') }};
+}
+
+.frame {
+	min-height: 100%;
+	min-width: 100%;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+}
+
+.circle {
+	height: 100px;
+	width: 100px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	position: relative;
+}
+
+.big-circle {
+	height: 200px;
+	width: 200px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	position: relative;
+}
+
+.menubar {
+	display: flex;
+	align-items: center;
+	flex-flow: row nowrap;
+	padding: 15px;
+	border-bottom: 1px solid #ececec;
+	background-color: #fafafa;
+}
+
+.logo-container {
+	display: flex;
+	max-width: 300px;
+	align-items: center;
+	flex-shrink: 0;
+	flex-flow: row nowrap;
+}
+
+.logo {
+	font-size: 22px;
+	margin-left: 5px;
+}
+
+.menu {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	flex-grow: 1;
+}
+
+.menu ul {
+	margin-right: 10px;
+}
+
+.menu li {
+	display: inline;
+	padding-left: 7px;
+	padding-right: 7px;
+	font-size: 16px;
+}
+
+#signup_area {
+	max-width: 400px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	padding-left: 20px;
+	background-color: #f9f9f9;
+	box-shadow: 0px 0px 25px #eaeaea;
+	border: 1px solid #dadada;
+}
+
+._home {
+	max-width: 1200px;
+	width: 1200px;
+	margin: 100px auto;
+}
+
+canvas {
+	top: 0;
+	left: 0;
+	position: absolute;
+}

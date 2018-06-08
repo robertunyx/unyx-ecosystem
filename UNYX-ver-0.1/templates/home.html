@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>UNYX </title>
+	
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/reset.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="{{ url_for('static', filename='js/_login-signup.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/_authenticate.js') }}"></script>
+</head>
+<body>
+
+	<canvas id="main"></canvas>
+
+	<div class="frame">
+
+		<div class="menubar">
+
+			<div class="logo-container">
+				<div class="logo">UNYX</div>
+			</div>
+
+			<div class="menu">
+				<ul id="menu_login">
+					<li>apps</li>
+					<form id="login">
+					<input id="username" placeholder="user" type="text" name="username">
+					<input id="password" placeholder="password" type="text" name="password">
+					<button type="submit">login</button>
+					</form>
+				</ul>
+			</div>
+
+		</div>
+
+		<div class="_home">
+			<form id="register">
+			<div id="signup_area">
+				<h1>Sign up: </h1>
+				<br>
+				<p>First name:</p>
+				<input id="first_name" placeholder="first name" type="text" name="first_name">
+				<p>Last name:</p>
+				<input id="last_name" placeholder="last name" type="text" name="last_name">
+				<p>Username:</p>
+				<input id="r_username" placeholder="username" type="text" name="r_username">
+				<p>Password:</p>
+				<input id="r_password" placeholder="password" type="text" name="r_password">
+				<br>
+				<button>sign up</button>
+			</div>
+			</form>
+
+				<div id="testbox"></div>
+				<div id="testbox2"></div>
+
+		</div>
+
+	</div>
+</body>
+</html>
