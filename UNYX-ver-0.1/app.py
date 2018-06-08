@@ -7,7 +7,6 @@ import json
 from bson import ObjectId
 from flask_login import LoginManager, UserMixin, login_required, login_user, logout_user, current_user
 from werkzeug.security import check_password_hash
-from credentials import MONGODB_URI
 
 app = Flask(__name__)
 
